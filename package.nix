@@ -75,7 +75,7 @@
 }:
 
 let
-  version = "25.12.1.1319-1";
+  version = "26.3.1.961-1";
   opusWithCustomModes = libopus.override { withCustomModes = true; };
 
   deps = [
@@ -149,7 +149,7 @@ stdenvNoCC.mkDerivation {
 
   src = fetchurl {
     url = "http://repo.yandex.ru/yandex-browser/deb/pool/main/y/yandex-browser-stable/yandex-browser-stable_${version}_amd64.deb";
-    hash = "sha256-Gy2tZHaiKuRzzmHaHtrAg51BJbXwpwS43pWaMz4PwqU=";
+    hash = "sha256-R8LVA2bjy1s0SWbw/ECAgNXv5cAN4Bidp6w/MRMIFJM=";
   };
 
   nativeBuildInputs = [ makeWrapper patchelf binutils ];
